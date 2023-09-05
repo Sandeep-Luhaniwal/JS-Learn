@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .margin {
+            margin-left: 300px;
+        }
+    </style>
+</head>
+
+<body class="margin">
+    <h1>JS Learn</h1>
+    <button type="button" onclick="sandeep()">cahnge</button>
+    <div id="demo">hello</div>
+    <div id="demo1">lapyop</div>
+    <!-- <button type="button" onclick="window.print()">print</button> -->
+    <h3>Button click change value & Function</h3>
+    <script>
+        let x, y, z;
+        x = 4;
+        y = 5;
+        z = 5;
+        // document.write(x + y - z);
+        function sandeep() {
+            document.getElementById('demo').innerHTML = (5 + 6) * 8;
+            document.getElementById('demo1').innerHTML = "change";
+        }
+    </script>
+    <br>
+    <br>
+    <h3>adding sum</h3>
+    <script>
+        var r = 10;
+        var p = 3;
+        var q = r + p;
+        document.write(q);
+        alert("Hello sir");
+    </script>
+    <br>
+    <br>
+    <h3>Switch statement</h3>
+    <script>
+        var a = 1;
+        switch (a) {
+            case 0:
+                document.write("hello")
+                break;
+            case 1:
+                document.write("hii")
+                break;
+            case 2:
+                document.write("good")
+                break;
+            default:
+                document.write("pls correct value put")
+        }
+
+    </script>
+    <br>
+    <br>
+    <h3>if else use</h3>
+    <script>
+        var a = 20;
+        if (a > 110) {
+            function AddNumber(parm1, parm2) {
+                var a = parm1 % parm2;
+                return a;
+            }
+            AddNumber(15, 2);
+        } else if (a < 5) {
+            function AddNumber(parm1, parm2) {
+                var a = parm1 - parm2;
+                return a;
+            }
+            AddNumber(15, 2);
+        } else if ((a = 10)) {
+            function AddNumber(parm1, parm2) {
+                var a = parm1 + parm2;
+                return a;
+            }
+
+            document.write(AddNumber(15, 2));
+        } else {
+            function AddNumber(parm1, parm2) {
+                var a = parm1 * parm2;
+                return a;
+            }
+            AddNumber(15, 2);
+        } 
+    </script>
+
+    <br>
+    <br>
+    <h3>Adv. function use</h3>
+    <script>
+        let user = " sachin";
+        let kpi = 54;
+        let hello = `hello  ${user} your marks ${kpi}`;
+        document.write(hello);
+    </script>
+    <br>
+    <br>
+    <h3>Arrow function</h3>
+    <script>
+        // let name = function (change) {
+        let name = (change, wait) => {
+            return `hello How are you ${change} ${wait}`;
+        }
+        document.write(name("Hello sir", 940));
+    </script>
+
+    <br>
+    <br>
+    <h3>Prompt value sum</h3>
+    <script>
+        var a, b, sum;
+        a = prompt("Enter a: ");
+        b = prompt("Enter b: ");
+        sum = parseInt(a) + parseInt(b)
+        document.write(sum);  
+    </script>
+    <br>
+    <br>
+    <h3 id="butt">Button Function</h3>
+    <input type="button" onclick="message();" value="click to show" />
+    <script>
+        function message() {
+            //alert("ok this is message from function");
+            document.write("hello<a href='./01.html'>click</a>");
+        }
+
+    </script>
+</body>
+
+</html>
