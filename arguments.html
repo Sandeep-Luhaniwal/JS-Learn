@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arguments Rest Operter</title>
+</head>
+
+<body>
+    <h1>hello</h1>
+    <script>
+        function sum(name, ...add) {
+            document.write(`How are you ${name} `)
+            let total = 0;
+            for (let i of add) {
+                total += i;
+            };
+            document.write(total + "<br>");
+
+        }
+        let arr = [6, 2]                  // Spread Operator
+        sum("hello", ...arr);
+        sum("", 20, 50, 60);                  //rest operator
+        sum("hello", 20, 10, 60);
+
+    </script>
+    <br>
+
+    <script>
+        let d = [1, 2];
+        document.write([...d] + "<br>");
+
+        let e = [3, 4, 5, 6, 7];
+        document.write(...e + "<br>");
+        let f = ["hello", ...d, ...e];
+        document.write(f);
+
+    </script>
+    <!-- <script>
+        let firstName = "Sandeep";
+        let lastName = "Kumar";
+        let fullName = {
+            firstName,
+            lastName,
+        }
+        console.log(fullName);
+    </script> -->
+    <script>
+        let firstName = "Sandeep";
+        let lastName = "Kumar";
+        let fullName = {
+            [firstName]: "student name",
+            lastName,
+        }
+        console.log(fullName);
+    </script>
+
+</body>
+
+</html>
